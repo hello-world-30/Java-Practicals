@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>
+            File Upload Application
+        </h2>
+        <form method="post" action="FileUploadServlet" enctype="multipart/form-data">
+            <label for="file" style="display: block;">
+                Select File to Upload:
+            </label>
+            <br/>
+            <div>
+                <input type="file" name="file" id="file"/>
+            </div>
+            <br/>
+            <label for="dest">
+                Destination:
+            </label>
+            <div>
+                <input type="text" id="dest" name="dest"/>
+            </div>
+            <br/>
+            <button type="submit">
+                Upload File
+            </button>
+        </form>
+        <br/>
+        <hr/>
+        <hr/>
+        <hr/>
+        
+        <h2>
+            File Download Application
+        </h2>
+        <div>
+            Click 
+            <a href="FileDownloadServlet?fileName=TYBScIT.txt">
+                TYBsc-IT Syllabus
+            </a>
+        </div>
+        <br/>
+        <div>
+            Click
+            <a href="FileDownloadServlet?fileName=AdvancedJava.txt">
+                University Exam Question Paper 2018
+            </a>
+        </div>
+    </body>
+</html>
