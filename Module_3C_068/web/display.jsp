@@ -29,7 +29,7 @@
         
         <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/test" user="root" password="root" />
         <sql:query dataSource="${db}" var = "result">
-            SELECT * FROM student_details_068;
+            SELECT id,name,marks FROM student_details_068 ORDER BY id;
         </sql:query>
         <center>
             <form>
